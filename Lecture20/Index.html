@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        #container {
+            background-color: chartreuse;
+            border: 3px solid black;
+            width: 1000px;
+            height: 600px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+
+            /* flex-direction: column; */
+            /*flex-direction: column-reverse; */
+
+            flex-wrap: wrap;
+            /*flex-wrap:nowrap;*/
+
+            /* flex-wrap: wrap-reverse; */
+            /* justify-content:flex-end;  */
+            /* justify-content: space-around;*/
+            /*justify-content: space-between;*/
+            /*justify-content: space-evenly; */
+            /* align-items:center; */
+            /* align-items: stretch; */
+              /* align-content: start; */
+              justify-content: space;
+        }
+
+        #item1 {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 5px;
+            order: 500;
+            /* flex-shrink: 10;
+            flex-grow: 5; */
+            /* align-self: center; */
+        }
+
+        #item2 {
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        #item3 {
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        #item4 {
+            background-color: darkorange;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 5px;
+            /* align-self: end; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="box" id="item1">item1</div>
+        <div class="box" id="item2">item2</div>
+        <div class="box" id="item3">item3</div>
+        <div class="box" id="item4">item4</div>
+    </div>
+
+</body>
+
+</html>
