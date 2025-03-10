@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+  }
+  .container {
+    width: 220vh;
+  
+    overflow: none;
+    background-color: #fa8bff;
+    background-image: linear-gradient(
+      45deg,
+      #fa8bff 0%,
+      #2bd2ff 52%,
+      #2bff88 90%
+    );
+  
+    box-sizing: none;
+  }
+  .navcontainer {
+    width: 100%;
+    min-height: 10px;
+  
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  nav {
+    width: 100%;
+    overflow-x: none;
+  }
+  #navlist {
+    width: 100%;
+    list-style: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+  }
+  #navname {
+    font-size: 2rem;
+    color: rgb(57, 57, 172);
+  }
+  a {
+    text-decoration: none;
+  }
+  #navitems {
+    display: flex;
+    gap: 15px;
+  }
+  .footerbox {
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  
+    width: 100%;
+    text-align: center;
+    min-height: 5px;
+  }
+  .footerbox p {
+    color: rgb(57, 57, 172);
+    font-size: 2rem;
+  }
+  .contantbox {
+    width: 60%;
+    margin: auto;
+    background-color: #3eecac;
+    background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 100px;
+    box-shadow: 1px 1px 30px black;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rightbox {
+    position: relative;
+    overflow: hidden;
+    transition: all 1s linear 0.1s;
+  }
+  .rightbox img {
+    height: 250px;
+    width: 210px;
+    border-radius: 10px;
+    transition: all 1s linear 0.1s;
+  }
+  .rightbox:hover {
+    transform: scale(1.2);
+  }
+  .lextbox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .leftbox h1 {
+    font-size: 2rem;
+  }
+  .ingbox {
+    font-size: 1.4rem;
+  }
+  .recipebox {
+    font-size: 1.1rem;
+  }
+  .rightbox .overly {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(201, 201, 201, 0.688);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s linear 0s;
+  }
+  .rightbox:hover .overly {
+    opacity: 1;
+  }
+  .rightbox .overly span {
+    font-size: 1.2rem;
+    color: black;
+  }
+  
