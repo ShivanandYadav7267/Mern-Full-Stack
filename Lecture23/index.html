@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: blanchedalmond;
+            border: 5px double dodgerblue;
+        }
+
+        .box {
+            width: 350px;
+            height: 80px;
+            background-color: rgb(16, 235, 38);
+            border: 5px double rgb(37, 4, 113);
+            border-radius: 20px;
+            margin: 20px;
+            padding: 0px;
+            position: relative;
+            animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+            animation-play-state: running;
+            animation-name: initial;
+            /* @keyframes | duration|timing-function|deley|interation-count|direction|fill-mode|play-state|name */
+            animation: 5s linear 1s infinite alternate none running rightmovement;
+        }
+
+        @keyframes rightmovement {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 900px;
+            }
+        }
+
+        #box1 {
+            width: 350px;
+            height: 80px;
+            background-color: rgb(16, 235, 38);
+            border: 5px double rgb(37, 4, 113);
+            border-radius: 20px;
+            margin: 20px;
+            padding: 0px;
+            position: relative;
+            animation-name: leftmovement;
+            animation: 5s linear 1s infinite alternate none running leftmovement;
+        }
+
+        @keyframes leftmovement {
+            from {
+                top: 200px;
+                left: 900px;
+            }
+
+            to {
+                top: 200px;
+                left: 0;
+            }
+
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(16, 235, 38);
+            border: 5px double rgb(37, 4, 113);
+            border-radius: 50px;
+            position: relative;
+            top:110px;
+            left: 550px;
+            animation: 7s linear 0s infinite alternate-reverse none running circlemovement;
+        }          
+        @keyframes circlemovement {
+            0% {
+                top: 1%;
+                left: 5%;
+            }
+
+            30% {
+                top: 5%;
+                left: 90%;
+            }
+            60% {
+                top: 25%;
+                left: 5%;
+            }
+            100% {
+                top: 40%;
+                left:90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+        </div>
+        <div class="circle">
+        </div>
+        <div id="box1">
+        </div>
+        
+    </div>
+</body>
+
+</html>
