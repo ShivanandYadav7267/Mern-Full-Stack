@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        :root {
+            --primary-color: rgb(206, 208, 252);
+            --custom-width: 200px;
+            --custom-height: 600px;
+        }
+
+        .container {
+            height: 800px;
+            background-color:aqua;
+            border: 10px;
+            border-style: double;
+            border-color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .box {
+            /* overflow-y:scroll; */
+            width: 700px;
+            height: var(--custom-height);
+            background-color: var(--primary-color);
+           border: 10px double blueviolet;
+            margin: 40px 20px 20px 20px;
+            padding: 5px;
+            /* box-shadow: 10px 15px rgb(87, 14, 224) */
+            /* box-shadow: 10px 15px 1px 3px rgba(214, 10, 232, 0.8); */
+            /* box-shadow: inset 10px 15px rgb(87, 14, 224) */
+            box-shadow: 10px 15px 5px rgb(9, 9, 220), 20px 25px 5px rgb(53, 207, 7)
+        }
+
+        .Image {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            margin-top: 40px;
+            height: 200px;
+            width: 600px;
+
+        }
+        h1{
+            /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+            /* text-shadow: 0 0 3px #FF0000; */
+            /* color: rgb(227, 78, 78);
+            text-shadow: -3px 0 rgb(26, 233, 74), 0 1px rgb(233, 62, 62), 1px 0 rgb(78, 56, 220), 0 -1px black; */
+        }
+
+        #head2 {
+            /* color:#0000FF; */
+            /* text-decoration-color: aqua; */
+            /* text-shadow:5px 5px */
+            /* text-shadow: 11px 8px 2px rgb(209, 58, 58);
+            text-shadow: black 1px 2px 1px; */
+            /* color: white;
+            text-shadow: 2px 2px 4px #323232; */
+            /* color: white; */
+            /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+            text-shadow: 2px 1px 0 blue,0px 0px 0 pink,1px 1px 1 black,0px 0px 0px violet ;
+        }
+
+        #p1,#p2 {
+            /* color: rgb(28, 15, 211);
+            text-shadow: 2px 2px 3px #132342; */
+            /* text: size 12px;;
+            text-size-adjust: 150px; */
+            /* text-shadow: 5px 3px brown; */
+            /* text-shadow: 0 0 3px #FF5434, 0 0 5px #0123FF; */
+            /* color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="Image">
+                <img src="Real Tutorial (1).jpg" />
+                <h1>Future Scope Future Scope Future Scope Future Scope Future Scope Future Scope Future Scope 
+                </h1>
+                <h2 id="head2">OP Yaduanshi</h2>
+            </div>
+            <strong>
+                <p id="p1"> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, recusandae?</b></p>
+            </strong>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsam itaque totam corrupti fugiat
+                asperiores neque magni, nesciunt ut est saepe alias placeat odio voluptatibus atque doloremque sint
+                obcaecati at eveniet non! Mollitia, culpa asperiores.</p>
+        </div>
+    </div>
+</body>
+
+</html>
