@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foem3</title>
+</head>
+
+<body>
+    <h1>Complesx form</h1>
+    <form>
+        <fieldset>
+            <legend>Persnol Information:</legend>
+            <label for="User Name ">Name:</label>
+            <input type="text" id="User Name" name="name ">
+
+            <label for="email">Emai:</label>
+            <input type="email" id="email " name="email">
+
+            <label for="Phone">Phone:</label>
+            <input type="tel" id="Phone" name=" phone number">
+
+            <label for="datepicker">date of birth:</label>
+            <input type="date" id="datepicker" name="datepicker">
+
+            <label for="gander">gander:</label>
+
+            <input type="radio" id="gander" name="gander1">
+            <label for="gander">Male</label>
+
+            <input type="radio" id="gander" name="gander1">
+            <label for="gander">Female Country</label>
+            <br>
+            <select name="Contry Name" id="Contry">
+
+                <option value="india">Indian</option>
+                <option value="america">American</option>
+                <option value="nepal">Nepoloum</option>
+                <option value="canada">canadian</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Address</legend>
+            <label for="Address "> street</label>
+            <input type="text" id="Address" name="Village ">
+
+            <label for="city">City</label>
+            <input type="text" id="city " name="Locality">
+
+            <label for="state">State</label>
+            <input type="text" id="state" name=" Place">
+
+            <label for="code">Zip code</label>
+            <input type="number" id="code" name="code1" pattern="{1-9}.{0-9}.{0-9}.">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+
+            <label for="Areatext">Comments:</label>
+            <textarea name="other info." id="Areatext" cols="30" rows="10"></textarea>
+
+            <label for="agree">I agree to thr term of service</label>
+            <input type="checkbox" name="agree" id="agree">
+
+        </fieldset>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
