@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="cat.jpg" type="image/x-icon">
+    <title>Media Queries</title>
+    <style>
+        .container {
+            /* width: 700px;
+            height: 500px; */
+            background-color: aqua;
+            border: 3px solid green;
+            display: flex;
+        }
+
+        .box1 {
+            width: 300px;
+            height: 210px;
+            background-color: rgb(101, 75, 205);
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            width: 200px;
+            background-color: rgb(239, 125, 125);
+            border: 1px solid black;
+            /* overflow:visible; */
+        }
+
+        .box2 {
+            width: 300px;
+            height: 210px;
+            background-color: rgb(101, 75, 205);
+            border: 1px solid black;
+            margin-top: 20px;
+            margin-left: 20px;
+            /* overflow:scroll; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        @media (max-width:667px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ratione fuga quae corporis facere eum
+                animi omnis pariatur voluptate.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, facilis?
+            </p>
+        </div>
+        <div class="box2">
+            <img id="img" src="cat.jpg">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
